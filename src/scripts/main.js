@@ -23,8 +23,8 @@ document.addEventListener('click', (e) => {
     const maxX = wallCoords.width - spiderCoords.width - borderWidth * 2;
     const maxY = wallCoords.height - spiderCoords.height - borderWidth * 2;
 
-    newX = Math.max(minCoords, Math.min(newY, maxX));
-    newY = Math.max(minCoords, Math.min(newX, maxY));
+    newX = Math.max(minCoords, Math.min(newX, maxX));
+    newY = Math.max(minCoords, Math.min(newY, maxY));
 
     spider.style.top = `${newY}px`;
     spider.style.left = `${newX}px`;
